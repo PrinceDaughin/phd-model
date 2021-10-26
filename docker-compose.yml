@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  model_api:
+    container_name: "model_api"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: model_api
+    ports:
+      - "8080:8080"
